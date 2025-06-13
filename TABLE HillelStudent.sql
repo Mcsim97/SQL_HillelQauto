@@ -7,9 +7,9 @@ CREATE TABLE car_brands (
 CREATE TABLE car_models (
 	id INT auto_increment primary key,
 	carBrandId INT,
-    title varchar(100) NOT NULL,
-    foreign key(carBrandId) references car_brands(id)
-    );
+    	title varchar(100) NOT NULL,
+    	foreign key(carBrandId) references car_brands(id)
+);
 
 create TABLE users (
 	id INT auto_increment primary key,
@@ -40,14 +40,14 @@ values
 insert into car_models(carBrandId,title)
 values
 	(1,'Camry'),
-    (1,'Corolla'),
-    (1,'Supra'),
+    	(1,'Corolla'),
+   	(1,'Supra'),
 	(2,'X5'),
-    (2,'X3'),
-    (2,'X7'),
+    	(2,'X3'),
+    	(2,'X7'),
 	(3,'911 Turbo'),
-    (3,'Cayeen'),
-    (3,'Panamera');
+    	(3,'Cayeen'),
+    	(3,'Panamera');
 
 insert into users(id,FirstName,LastName,email,password)
 values
@@ -57,6 +57,6 @@ values
     
 insert into cars (UserId,carBrandId,carModelId,Miliage,InitialMiliage)
 	values
-    (1,1,1,10000,1000),
-    (2,2,6,5000,500),
-    (3,2,4,1000,300);
+    	(1,1,1,10000,1000),
+    	(2,2,6,5000,500),
+    	(3,2,4,1000,300);
