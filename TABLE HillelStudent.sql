@@ -1,9 +1,4 @@
 use HillelQauto;
-DROP TABLE IF EXISTS cars;
-DROP TABLE IF EXISTS users;
-DROP TABLE IF EXISTS car_models;
-DROP TABLE IF EXISTS car_brands;
-
 CREATE TABLE car_brands (
 	id INT auto_increment primary key,
 	title varchar(100) NOT NULL
